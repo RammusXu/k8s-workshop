@@ -41,6 +41,12 @@ curl -H "Host:v2.com" http://localhost
 kubectl delete -f .
 ```
 
+## Why Ingress
+1. 自動化 SSL (配合 helm: cert-manager)
+2. Reverse Proxy
+3. 一個 LB 集中管理
+4. 可以用 regex
+
 ## Troubleshooting
 >  spec.ports[0].nodePort: Forbidden: may not be used when `type` is 'ClusterIP'
 

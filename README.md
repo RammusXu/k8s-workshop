@@ -13,7 +13,7 @@
 - https://github.com/wardviaene/on-prem-or-cloud-agnostic-kubernetes
 
 ## TODO
-- DNS
+- DNS, namespace, find other service
 
     foo.bar.my-namespace.svc.cluster.local
 
@@ -21,11 +21,6 @@
     - cert-manager
     - kubenetes-dashboard
 
-- Why Ingress
-    1. 自動化 SSL
-    2. Reverse Proxy
-    3. 一個 LB 集中管理
-    4. 可以用 regex
 - kops
     ```
     brew update && brew install kops
