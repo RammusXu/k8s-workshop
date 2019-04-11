@@ -5,9 +5,9 @@
 
 
 ## Course
-https://github.com/wardviaene/kubernetes-course
-https://github.com/wardviaene/advanced-kubernetes-course
-https://github.com/wardviaene/on-prem-or-cloud-agnostic-kubernetes
+- https://github.com/wardviaene/kubernetes-course
+- https://github.com/wardviaene/advanced-kubernetes-course
+- https://github.com/wardviaene/on-prem-or-cloud-agnostic-kubernetes
 
 ## TODO
 - DNS
