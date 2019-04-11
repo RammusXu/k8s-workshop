@@ -4,7 +4,7 @@
 - [1-setup-environments](https://github.com/RammusXu/k8s-workshop/blob/master/1-setup-environments/README.md)
 - [2-first-app](https://github.com/RammusXu/k8s-workshop/blob/master/2-first-app/README.md)
 - [3-deployment](https://github.com/RammusXu/k8s-workshop/blob/master/3-deployment/README.md)
-- [4-ingress](https://github.com/RammusXu/k8s-workshop/blob/master/4-ingress/README.md)
+- [5-ingress](https://github.com/RammusXu/k8s-workshop/blob/master/5-ingress/README.md)
 
 
 ## Course

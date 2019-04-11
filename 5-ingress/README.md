@@ -39,6 +39,7 @@ curl -H "Host:v2.com" http://localhost
 ## Clean
 ```
 kubectl delete -f .
+helm delete nginx-ingress --purge
 ```
 
 ## Why Ingress
