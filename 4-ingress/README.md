@@ -1,4 +1,5 @@
 ## Apply
+安裝 Ingress Controller
 ```
 helm install --name nginx-ingress stable/nginx-ingress \
     --set controller.kind=DaemonSet \
@@ -10,6 +11,10 @@ helm install --name nginx-ingress stable/nginx-ingress \
     --set controller.hostNetwork=true \
     --set rbac.create=true \
     --namespace kube-system
+```
+
+```
+kubectl apply -f .
 ```
 
 
@@ -29,6 +34,11 @@ curl http://localhost/v1
 curl http://localhost/v2
 curl -H "Host:v1.com" http://localhost
 curl -H "Host:v2.com" http://localhost
+```
+
+## Clean
+```
+kubectl delete -f .
 ```
 
 ## Troubleshooting
