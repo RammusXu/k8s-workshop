@@ -6,7 +6,7 @@ docker ps
 docker run hello-world
 ```
 
-![docker-ps](https://github.com/RammusXu/k8s-workshop/blob/master/setup-environments/docker-ps.png)
+![docker-ps](https://github.com/RammusXu/k8s-workshop/blob/master/1-setup-environments/docker-ps.png?raw=true)
 
 
 ## Install Kubernetes
@@ -35,19 +35,6 @@ helm init --service-account tiller
 helm version
 ```
 
-```
-helm install stable/kubernetes-dashboard --name kubernetes-dashboard --set rbac.clusterAdminRole=true
-```
-
-```
-kubectl proxy
-```
-
-http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
-```
-kubectl get secret
-kubectl describe secret kubernetes-dashboard-token-rkq9g
-```
 
 ## Troubleshooting
 > Error: could not find tiller
