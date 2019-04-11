@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-deployment
+  labels:
+    app: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+      - name: demo
+        image: jocatalin/kubernetes-bootcamp:v1
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MASTER
+          value: "true"
+        - name: APP_ENV
+          valueFrom:
+            configMapKeyRef:
+              # The ConfigMap containing the value you want to assign to SPECIAL_LEVEL_KEY
+              name: my-config
+              # Specify the key associated with the value
+              key: APP_ENV
+        - name: password
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: password
