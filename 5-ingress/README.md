@@ -5,7 +5,10 @@ helm install --name nginx-ingress stable/nginx-ingress \
     --set controller.kind=DaemonSet \
     --set controller.hostNetwork=true \
     --set rbac.create=true
+```
 
+比較好管理的建議
+```
 helm install --name nginx-ingress stable/nginx-ingress \
     --set controller.kind=DaemonSet \
     --set controller.hostNetwork=true \
@@ -32,6 +35,7 @@ helm status nginx-ingress
 curl http://localhost
 curl http://localhost/v1
 curl http://localhost/v2
+
 curl -H "Host:v1.com" http://localhost
 curl -H "Host:v2.com" http://localhost
 ```

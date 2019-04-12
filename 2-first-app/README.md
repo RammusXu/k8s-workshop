@@ -1,5 +1,5 @@
 ```
-kubectl apply -f hello-deployment.yaml 
+kubectl apply -f hello-pod.yaml 
 kubectl get pod
 kubectl describe pod/hello-pod
 ```
@@ -10,7 +10,7 @@ kubectl logs -f hello-pod
 ```
 
 ```
-curl http://localhost/
+curl http://localhost:8099/
 ```
 
 ```

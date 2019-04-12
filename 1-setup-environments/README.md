@@ -3,7 +3,7 @@ https://docs.docker.com/docker-for-mac/install/
 
 ```
 docker ps
-docker run hello-world
+docker run -it --rm hello-world
 ```
 
 ![docker-ps](https://github.com/RammusXu/k8s-workshop/blob/master/1-setup-environments/docker-ps.png?raw=true)
@@ -19,7 +19,7 @@ kubectl version
 kubectl get nodes
 kubectl cluster-info
 kubectl config get-contexts
-
+kubectl get pod --namespace=kube-system
 ```
 
 https://www.digitalocean.com/community/tutorials/how-to-install-software-on-kubernetes-clusters-with-the-helm-package-manager
@@ -35,11 +35,12 @@ helm init --service-account tiller
 helm version
 ```
 
-
 ## Troubleshooting
 > Error: could not find tiller
 
 沒有設定 tiller-rbac.yaml
+
+或是還在 creating
 
 > Error: could not find a ready tiller pod
 

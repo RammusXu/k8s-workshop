@@ -25,8 +25,8 @@ kubectl rollout status deployment demo-deployment
 
 ## Change deployment
 ```
-kubectl scale deploy demo-deployment --replicas=4
-kubectl set image deployment/demo-deployment demo=jocatalin/kubernetes-bootcamp:v2
+kubectl scale deploy demo-deployment --replicas=4 --record
+kubectl set image deployment/demo-deployment demo=jocatalin/kubernetes-bootcamp:v2 --record
 
 kubectl rollout undo --dry-run=true deployment/demo-deployment
 kubectl rollout undo deployment/demo-deployment
